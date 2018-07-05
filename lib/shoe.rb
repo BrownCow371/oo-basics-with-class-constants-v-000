@@ -9,6 +9,11 @@ class Shoe
     BRANDS<<brand if !(BRANDS.includes?(brand))
   end
 
+  def brand=()
+    @brand = brand
+    BRANDS<<brand if !(BRANDS.includes?(brand))
+  end
+
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
